@@ -28,8 +28,8 @@ function window() {
     keisen.add("statictext", undefind, "間隔")
     var keisen_dis_btw = keisen.add("edittext", undefind, 0)
     //角度
-    keisen.add("statictext", undefind, "角度")
-    var keisen_angle = keisen.add("edittext", undefind, 90)
+    keisen.add("statictext", undefind, "角度(0~180)")
+    var keisen_angle = keisen.add("edittext", undefind, 0)
     
     //交差する罫線関連
     var crs_keisen = win.add("panel", [0,0,200,60], "交差する罫線")
@@ -37,8 +37,8 @@ function window() {
     crs_keisen.add("statictext", undefind, "間隔")
     var crs_keisen_dis_btw = crs_keisen.add("edittext", undefind, 0)
     //角度
-    crs_keisen.add("statictext", undefind, "角度")
-    var crs_keisen_angle = crs_keisen.add("edittext", undefind, 0)
+    crs_keisen.add("statictext", undefind, "角度(0~180)")
+    var crs_keisen_angle = crs_keisen.add("edittext", undefind, 90)
     
     //決定
     var button = win.add("button", [80, 25, 40, 25], "決定")
@@ -53,11 +53,12 @@ function window() {
     Window.show()
 }
 
+//書く
 function write(n) {
-    
+     
 }
 
-//書く角度を算出
+//書く座標を角度から算出
 function keisenAngle(){
     
 }
