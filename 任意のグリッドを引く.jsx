@@ -20,17 +20,31 @@ function window() {
     keisen.add("statictext", [15, 75, 180, 85], "本数")
     var keisen_number = keisen.add("edittext", [15, 95, 180, 115], 5)
     //間隔
+<<<<<<< HEAD
     keisen.add("statictext", [15, 130, 180, 140], "間隔")
     var keisen_dis_btw = keisen.add("edittext", [15, 150, 180, 170], 50)
    
+=======
+    keisen.add("statictext", undefind, "間隔")
+    var keisen_dis_btw = keisen.add("edittext", undefind, 0)
+    //角度
+    keisen.add("statictext", undefind, "角度(0~180)")
+    var keisen_angle = keisen.add("edittext", undefind, 0)
+    
+>>>>>>> 1e4717410242f1f834c70633bb13fb9a9fa937f6
     //交差する罫線関連
     var crs_keisen = win.add("panel", [0, 230, 200, 385], "交差する罫線")
     //間隔
     crs_keisen.add("statictext", [15, 20, 180, 30], "間隔")
     var crs_keisen_dis_btw = crs_keisen.add("edittext", [15, 40, 180, 60], 50)
     //角度
+<<<<<<< HEAD
     crs_keisen.add("statictext", [15, 75, 180, 95], "角度")
     var crs_keisen_angle = crs_keisen.add("edittext", [15, 105, 180, 125], 60)
+=======
+    crs_keisen.add("statictext", undefind, "角度(0~180)")
+    var crs_keisen_angle = crs_keisen.add("edittext", undefind, 90)
+>>>>>>> 1e4717410242f1f834c70633bb13fb9a9fa937f6
     
     //決定
     var button = win.add("button", [0, 540, 80, 565], "決定")
@@ -58,6 +72,7 @@ function window() {
         var c_number = (length - (length % c_dis_btw))/c_dis_btw
         var c_height = (number - 1) * dis_btw + (length % c_dis_btw + c_dis_btw) * Math.abs(Math.sin ((90 - c_angle) / 180 * Math.PI))
 
+<<<<<<< HEAD
         //横線
         for(var i=0; i<number; i++){
             var y1 = center[1] + ((number - 1) * dis_btw / 2) + (i * -dis_btw)
@@ -91,6 +106,15 @@ function window() {
         }
         win.close()
     }
+=======
+//書く
+function write(n) {
+     
+}
+
+//書く座標を角度から算出
+function keisenAngle(){
+>>>>>>> 1e4717410242f1f834c70633bb13fb9a9fa937f6
     
     //見せる
     win.show()
